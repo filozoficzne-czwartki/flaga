@@ -18,11 +18,12 @@ apt upgrade
 
 
 ```
-apt install git
-cd /var/www
-git clone https://github.com/lukasz-test/flaga.git
+sudo apt install git
+sudo mkdir /var/www
+sudo cd /var/www
+sudo git clone https://github.com/lukasz-test/flaga.git
 cd flaga
-python3 xD.py
+sudo python3 xD.py
 ```
 
 #### 4. Wewnątrz środowiska (env).
