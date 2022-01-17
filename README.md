@@ -10,8 +10,8 @@ ssh nazwa_uzytkownika@adres_ip
 #### 2. Uaktualniamy paczki (packages).
 
 ```
-apt update
-apt upgrade
+sudo apt update
+sudo apt upgrade
 ```
 
 #### 3. Git.
