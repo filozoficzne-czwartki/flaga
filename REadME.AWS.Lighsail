@@ -1,0 +1,29 @@
+Lightsail - alternatywa dla leniwych
+https://lightsail.aws.amazon.com/ls/webapp/home
+
+1. Create Instance
+2. Frankfurt, Linux, OS only, Ubuntu 20
+3. Create Instance
+4. Polacz sie z utworzonym serwerem
+5. Connect -> Connect using SSH (wersja webowa terminala)
+
+6. ponizsza lista w kolejnosci jak widac.
+
+sudo apt update
+sudo apt upgrade
+sudo install git
+sudo mkdir /var/www
+sudo mkdir /var/www/flaga
+sudo chown -R ubuntu.ubuntu /var/www/flaga
+cd /var/www/flaga/
+git clone https://github.com/lukasz-test/flaga.git
+sudo systemctl daemon-reload
+sudo systemctl restart nginx
+sudo systemctl restart flaga.service
+sudo systemctl status flaga.service
+
+7. https://lightsail.aws.amazon.com/ls/webapp/home/networking
+8. Create static IP
+9. Podpiecie domeny u sprzedawcy jako:
+    Rekod A -> Staic IP z AWS 
+10. 10 min przerwy na odswiezenie DNS'ow    
